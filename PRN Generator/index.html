@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" id="blur">
+<head>
+	<title>MITAOEprn.com</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Mohit Katkar(067)">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	
+	<script src="script.js"></script>
+	<h1> MIT Academy Of Engineering, Alandi (Pune).
+	<br><br> <strong>PRN Generator System</strong></h1>
+	
+	<table class="mov">
+	<form id="PRN" autocomplete="off" onsubmit="event.preventDefault();">
+		<tr>
+		<td>Student Name:</td>
+		<td><input type="text" name="first name" id="fname"  placeholder="First Nmae" required></td>
+		<td><input type="text" name="lname" id="lname" placeholder="Last Nmae" required></td>
+		</tr>
+		
+		<tr>
+		<td>Current Year:</td>
+		<td><input type="number" name="addyear" id="year"  min="1999" max="2099"placeholder="Current" required></td>
+		</tr>
+		
+		<tr>
+		<td>Branch:</td>
+		<td><select name="branch" id="branch" required>
+			<option class"select" value="" disabled selected>Select Branch</option>
+  			<option value="CH">Chemical Engineering</option>
+			<option value="CV">Civil Engineering</option>
+  			<option value="CS">Computer Engineering</option>
+  			<option value="ETX">EnTC Engineering</option>
+  			<option value="EX">Electronics Engineering</option>
+			<option value="ME">Mechanical Engineering</option>
+			</select>
+		</td>
+		</tr>
+
+		<tr>
+		<td>Batch No:<br>(From 1 to 10)</td>
+		<td><input type="number" name="batchno"  id="batch" min="01" max="10" step="01" placeholder="Batch No" required></td>
+		</tr>
+		
+		<tr>
+		<td>Sequence No:<br>(From 1 to 1000)</td>
+		<td><input type="number" name="sqno"  id="sqno" min="01" max="1000" step="01" placeholder="Seq, NO" required></td>
+		</tr>
+		<tr>
+		<td><button type="submit" onclick="generate()">Generate PRN</button></td>
+		<td><button type="reset">Reset</button></td></tr>
+		
+	</form>
+	</table>
+
+</body>
+
+</html>
